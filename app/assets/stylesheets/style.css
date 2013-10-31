@@ -1,0 +1,297 @@
+/*-----------------------------------------------Everything*/
+
+body {
+	padding: 140px 0;
+	background-image: url('pw_maze_white.png');
+/*	background-color: white;*/ 
+	background-repeat: repeat;
+	height: 100px;
+	perspective: 800px;
+}
+
+h1, 
+h2, 
+h3 {
+	color: gray;
+	font-family: 'Montaga', serif;
+}
+
+h3 {
+
+}
+
+#h1-index {
+	position: relative;
+	left: 12em;
+}
+
+#h1-multimedia {
+	position: relative;
+	left: 3em;
+}
+
+.entire-container {
+	max-width: 1015px;
+	max-height: 3015px;	
+	padding: 30px;
+  	margin: auto;
+  	overflow: auto;
+  	border: 1px solid gray;
+  	background-color: rgba(255,255,255,0.3);
+  	box-shadow: 6px 5px 3px 1px rgba(0,0,0,0.5);
+  	background-color: white;
+	background-repeat: repeat;
+}
+
+.modded-container {
+	max-width: 1000px;
+	max-height: 3000px;
+	padding: 15px;
+  	margin: auto;
+  	overflow: auto;
+  	border: 1px solid gray; 
+  	background-color: rgba(200,200,200,0.5); 
+  	box-shadow: 6px 5px 3px 1px rgba(0,0,0,0.5);
+}
+
+#setting-btn {
+	position: absolute;
+	right: 0px;
+	top: 8px;
+	box-shadow: 0 0 1px rgba(0,0,0,.5);
+}
+
+#signin-btn {
+	position: absolute;
+	right: 50px;
+	top: 8px;
+	box-shadow: 0 0 1px rgba(0,0,0,.5);
+}
+/*--------------------------------------------------Dividers*/
+
+.vertical-line {
+	position: absolute;
+	height: 300px;
+	border-right: 1px solid gray;
+}
+
+.horizontal-line {
+	width: 300px;
+	border-bottom: 1px solid gray;
+	margin: 30px auto;
+}
+
+.horizontal-line-left {
+	width: 300px;
+	border-bottom: 1px solid gray;
+	margin: 15px auto 15px 0;
+}
+/*--------------------------------------------------Panel*/
+
+.mypanel {
+	width: 430px;
+	height: 250px; 
+	border: solid gray thin;
+	background-image: url('../img/f3.jpg');
+	background-size: contain;
+	margin: 15px;
+}
+
+.float-left {
+	float: left;
+	margin-left: 15px;
+}
+
+.float-right {
+	float: right;
+	margin-right: 15px;
+}
+
+/*-------------------------------------------------Carousel*/
+
+
+
+#carousel-container {
+ 	padding: 30px;
+}
+
+#carousel-container-m {
+	height: 94%;
+	width: 94%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*-------------------------------------------------Gallery*/
+
+.img-thumbnail {
+	height: 100%;
+	width: 100%;
+}
+
+#gallery {
+	padding: 15px;
+}
+
+#previewbox {
+	border: solid white;
+	width: 960px;
+	height: 600px;
+}
+
+.modal-body img {
+	height: 100%;
+	width: 100%;
+}
+
+/*-----------------------------------------------Side Navigation*/
+
+.side-nav-left,
+.side-nav-right {
+	margin: 30px 45px;
+	width: 300px;
+	height: 500px;
+	border: 1px solid gray thin;
+	box-shadow: 6px 5px 3px .5px rgba(0,0,0,0.5);
+}
+
+.side-nav-left {
+	float: left;
+}
+
+.side-nav-right {
+	float: right;
+}
+
+#side-nav-left-index,
+#side-nav-left-multimedia,
+#side-nav-right-index,
+#side-nav-right-multimedia {
+	max-width: 300px;
+	background-color: rgba(200,200,200,0.5);
+}
+
+#side-nav-left-index {
+	display: none;
+}
+#side-nav-right-index {
+	display: none;
+}
+
+#side-nav-left-multimedia {
+}
+
+#side-nav-right-multimedia {
+	visibility: hidden;
+}
+
+/*-----------------------------------------------Footer*/
+
+.footer {
+	background-color: rgb(250,250,250);
+	color: gray;
+	height: 100px;
+	width: 100%;
+	margin-top: 60px;
+	border-top: 1px solid rgb(200,200,200);
+	position: relative;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	box-shadow: 0 1px 2px #000, 0 -1px 1px #666, inset 0 -1px 1px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.8);
+}
+
+/*-----------------------------------------------Forms*/
+
+#exampleInputEmail1,
+#exampleInputPassword1 {
+	width: 75%;
+}
+
+.navbar {
+	background-color: white;
+	border-bottom: 1px solid rgb(200,200,200);
+}
+
+.secondary-top {
+	width: 100%;
+/*	background: radial-gradient(gray,black);*/
+	height: 70px;
+	position: absolute;
+	top: 50px;
+	box-shadow: 0 1px 2px #000, 0 -1px 1px #666, inset 0 -1px 1px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.8);
+	background: linear-gradient(black,rgba(100,100,100,0.5));
+
+}
+
+/*-----------------------------------------------2d Transforms*/
+
+.wrap {
+	margin: 0 auto;
+	padding: 110px 0;
+	width: 85%;
+	background: #F0FCFF;
+	box-shadow: 0 0 20px rgba(0,0,100,.5);
+}
+.box {
+	margin: auto;
+	width: 150px;
+	background: url('../img/mike-transparent.png') no-repeat 0 0;
+	background-size: 150px;
+}
+.mike {
+	display: block;
+	width: 100%;
+	transition: 1s ease-in-out;
+}
+
+.wrap:hover .mike {
+	transform: translateX(300px);
+}
+
+/*-----------------------------------------------3d Transforms*/
+
+.wrap-b {
+	position: relative;
+	margin: 0 auto;
+	width: 250px;
+	height: 350px;
+	cursor: pointer;
+	transition: transform 1s ease-in;
+	transform-style: preserve-3d;
+}
+
+.wrap-b div {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background-position: 50% 50%;
+	background-size: 150px;
+	background-repeat: no-repeat;
+	box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
+	color: #FFF;
+	text-align: center;
+	text-shadow: 0 1px rgba(0,0,0,.3);
+	font: bold 3em sans-serif;
+	line-height: 350px;
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.side-a {
+	background: #498FBC url('../img/mike.png');
+	z-index: 100;
+}
+.side-b {
+	background: #33363B url('../img/logo.png');
+	transform: rotateY(-180deg);
+}
+
+.wrap-b:hover {
+	transform: rotateY(180deg);
+}
+
+.right {
+	position: absolute;
+	right: 500px;
+}
